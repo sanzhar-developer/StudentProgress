@@ -1,0 +1,98 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  width: 100%;
+  max-width: 850px;
+  background: rgba(17, 24, 39, 0.92);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 24px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.home-title {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 32px;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.home-link {
+  text-decoration: none;
+}
+
+.home-btn {
+  min-width: 220px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.home-btn.register {
+  background: #3b82f6;
+  color: white;
+}
+
+.home-btn.login {
+  background: #1e293b;
+  color: white;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+@media (max-width: 700px) {
+  .home-container {
+    padding: 28px 20px;
+  }
+
+  .home-title {
+    font-size: 30px;
+  }
+
+  .home-subtitle {
+    font-size: 16px;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .home-btn {
+    width: 100%;
+    min-width: unset;
+  }
+}
