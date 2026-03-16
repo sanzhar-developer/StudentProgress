@@ -26,7 +26,7 @@ function StudentPage() {
   const deleteSubject = async (id) => {
     const token = localStorage.getItem("token");
 
-    await fetch(`http://localhost:3000/subject/${id}`, {
+    await fetch(`https://studentprogress-production.up.railway.app/subject/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`
@@ -40,7 +40,7 @@ function StudentPage() {
   const updateSubject = async (id, newName) => {
     const token = localStorage.getItem("token");
 
-    await fetch(`http://localhost:3000/subject/${id}`, {
+    await fetch(`https://studentprogress-production.up.railway.app/subject/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ function StudentPage() {
   const fetchSubjects = async () => {
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:3000/subject", {
+    const response = await fetch("https://studentprogress-production.up.railway.app/subject", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -72,7 +72,7 @@ function StudentPage() {
   const fetchGrades = async () => {
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:3000/grade", {
+    const response = await fetch("https://studentprogress-production.up.railway.app/grade", {
       headers: {
         Authorization: `Bearer ${token}`
       }
