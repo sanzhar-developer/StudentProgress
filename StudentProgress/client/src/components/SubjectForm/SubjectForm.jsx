@@ -10,7 +10,7 @@ function SubjectForm({ onSubjectAdded }) {
     const token = localStorage.getItem("token");
 
     const response = await fetch(
-      "http://localhost:3000/subject",
+      "https://studentprogress-production.up.railway.app/login/subject",
       {
         method: "POST",
         headers: {

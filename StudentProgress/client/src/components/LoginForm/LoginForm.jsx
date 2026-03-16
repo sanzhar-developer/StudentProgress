@@ -14,7 +14,7 @@ function LoginForm() {
         e.preventDefault();
 
         const response = await fetch(
-            "http://localhost:3000/auth/login",
+            "https://studentprogress-production.up.railway.app/loginauth/login",
             {
                 method: "POST",
                 headers: {

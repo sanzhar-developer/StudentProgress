@@ -15,7 +15,7 @@ function RegisterForm() {
     e.preventDefault();
 
     const response = await fetch(
-      "http://localhost:3000/auth/register",
+      "https://studentprogress-production.up.railway.app/loginauth/register",
       {
         method: "POST",
         headers: {

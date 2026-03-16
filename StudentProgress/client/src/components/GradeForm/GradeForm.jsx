@@ -10,7 +10,7 @@ function GradeForm({ subjects, onGradeAdded }) {
 
     const token = localStorage.getItem("token");
 
-    const response = await fetch("http://localhost:3000/grade", {
+    const response = await fetch("https://studentprogress-production.up.railway.app/grade", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
